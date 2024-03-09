@@ -5,7 +5,8 @@ from org.das2.graph import DasColorBar
 # Set metadata for tool.
 
 setScriptTitle("Plot the Mandelbrot Set.")
-setScriptDescription("Finds points in the Mandelbrot Set and plots them.")
+setScriptLabel("Plot Mandelbrot Set.")
+setScriptDescription("Find points in the Mandelbrot Set and plot them.")
 
 # Params
 center_x = getParam("x", 0, "Real coordinate for the center of the region to look at.")
@@ -47,5 +48,5 @@ m = find_mandelbrot_set(
     iterations=iterations,
 )
 
-plot(m, renderType="nnSpectrogram")
 dom.plots[0].setColortable(DasColorBar.Type.GRAYSCALE)
+plot(m, renderType="nnSpectrogram")
