@@ -1,3 +1,4 @@
+# title: Plot the Mandelbrot Set.
 # label: Plot the Mandelbrot Set.
 
 from org.das2.graph import DasColorBar
